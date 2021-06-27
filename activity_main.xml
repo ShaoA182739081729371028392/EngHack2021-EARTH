@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            >
+
+            <ImageView
+                android:id="@+id/MainBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:alpha="0.5"
+                android:scaleType="fitXY"
+                android:src="@drawable/aqarium"
+
+                />
+
+            <ImageView
+                android:id="@+id/AboutEarthBackground"
+                android:layout_width="match_parent"
+                android:layout_height="1000dp"
+                android:layout_alignBottom="@+id/ExplanationText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-3dp"
+                android:layout_marginBottom="-65dp"
+                android:alpha="0.6"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/earth" />
+
+            <TextView
+                android:id="@+id/TextTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="0dp"
+                android:paddingTop="300dp"
+                android:text="EARTH: Saving the Environment, One Picture at a Time!"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/TextMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif-light"
+                android:paddingHorizontal="20dp"
+                android:paddingLeft="0dp"
+                android:paddingTop="375dp"
+                android:text="\t \t \t The improper disposal of waste(Litter) is causing a variety of adverse effects on the local environment, animals, and the economy, by leaching into local rivers, lakes, and being eaten by animals. However, the process of cleaning litter in our cities and streets can be both expensive and time-consuming for the government and citizens. This is where EARTH, or Environmental Ai Rubbish deTection tecHnology, can provide an easy solution to start cleaning our environment"
+                android:textColor="#fff"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/button_about_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:onClick="AboutEarthPushed"
+                android:layout_marginStart="86dp"
+                android:layout_marginTop="35dp"
+                android:text="About EARTH" />
+
+            <Button
+                android:id="@+id/button_try_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:onClick="TryItOutPushed"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="35dp"
+                android:text="Try it Out!" />
+
+            <TextView
+                android:id="@+id/textAboutEarthTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="650dp"
+                android:fontFamily="sans-serif-light"
+                android:text="About EARTH!"
+                android:textColor="#000"
+                android:textSize="24dp" />
+
+
+            <TextView
+                android:id="@+id/ExplanationText"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="698dp"
+                android:fontFamily="sans-serif-light"
+                android:text="EARTH is an Deep-Learning Based app to solve the littering problem. It uses an Computer-Vision Based Object Detector to localize all litter(ex. cigarette butts, cans, plastics, etc.) inside an image, allowing autonomous robot systems to automatically localize litter and clean it up. Furthermore, the application supports geographic reporting of litter and garbage, so cities and provinces with the largest litter problems can be attended to first, leveraging consumer data to solve real-world problems and host city-wide cleanups. With the rise of environmental issues in the world, EARTH is here to solve littering."
+                android:textColor="#000" />
+
+            #android:textColor="#fff"
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="960dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Try the Application Out!"
+                android:textColor="#000"
+                android:textSize="24dp" />
+
+            <!-- Image Input for EARTH -->
+
+            <ImageView
+                android:id="@+id/TryItOutBackground"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_alignBottom="@+id/ExplanationText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-74dp"
+                android:layout_marginBottom="-515dp"
+                android:alpha="0.6"
+                android:scaleType="fitXY"
+                android:src="@drawable/turquoise" />
+
+            <ImageView
+                android:id="@+id/image_input"
+                android:layout_width="181dp"
+                android:layout_height="155dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1025dp"
+                android:layout_marginEnd="115dp"
+                android:scaleType="fitCenter" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Load Image"
+                android:onClick = "load_from_gallery"
+                android:layout_marginTop="1250dp"
+                />
+
+            <Button
+                android:id="@+id/take_photo_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1200dp"
+                android:layout_marginEnd="2dp"
+                android:onClick="take_photo"
+                android:text="Take Photo!" />
+
+            <TextView
+                android:id="@+id/BoundingBoxFound"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="11dp"
+                android:layout_marginTop="1295dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="#000" />
+
+            <TextView
+                android:id="@+id/BoundingBoxCounts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="1315dp"
+                android:fontFamily="sans-serif-light"
+                android:text=""
+                android:textColor="#000"
+
+                />
+            <ImageView
+                android:id="@+id/GeographicBackGround"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+                android:layout_alignBottom="@+id/ExplanationText"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="-74dp"
+                android:layout_marginBottom="-965dp"
+                android:alpha="0.6"
+                android:scaleType="fitXY"
+                android:src="@drawable/green" />
+            <TextView
+                android:id="@+id/textViewCleanUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="81dp"
+                android:layout_marginTop="1400dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Organize a City Cleanup!"
+                android:textColor="#000"
+                android:textSize="24dp" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/pieChart"
+                android:layout_width="169dp"
+                android:layout_height="159dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="1480dp"
+                android:layout_marginEnd="117dp" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+</FrameLayout>
